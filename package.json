@@ -5,13 +5,15 @@
   "main": "index.js",
   "homepage": "https://matthewmullins.github.io/portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "sass --watch scss:dist/css",
     "deploy": "gh-pages -d dist"
   },
   "author": "Matthew Mullins",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.9.3"
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.90.0"
   }
 }
